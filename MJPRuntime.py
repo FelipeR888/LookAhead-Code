@@ -1,4 +1,8 @@
+#!/usr/bin/env python
+# coding: utf-8
+
 # In[ ]:
+
 
 import pyabc
 import matplotlib.pyplot as plt
@@ -16,15 +20,18 @@ logfile_path="/home/felipe/testresults/MJPAcceptanceRates.csv"
 # In[ ]:
 
 
-port=6379
-eps_list=[10,5,3,2,1,0.8,0.66]
+port=6358
+
+eps_list=[10, 5, 3, 2, 1, 0.8, 0.66]
 eps=pyabc.ListEpsilon(eps_list)
+#eps=pyabc.MedianEpsilon(500, median_multiplier=0.8)
+
 max_nr_pop=len(eps_list)
 min_eps=0.66
 pop_sizes = [32, 64, 128, 256, 512, 1024, 2048]
-iters_PPP = 10
-iters_ori = 3
-resultfilepath = "/home/felipe/testresults/MJP/local8.txt"
+iters_PPP = 15
+iters_ori = 10
+resultfilepath = "/home/freck/sampling/log/MJPruntimeresults.txt"
 resultfile = open(resultfilepath, "w")
 resultfile.write("Pop size, Look_ahead, Repetitions, Runtime Expectation, Runtime Variance, total Walltime\n")
 resultfile.close()
@@ -133,9 +140,10 @@ prior = pyabc.Distribution(rate=pyabc.RV("uniform", 0, 100))
 # In[ ]:
 
 
-redis_sampler = pyabc.sampler.RedisEvalParallelSampler(host="localhost",
+redis_sampler = pyabc.sampler.RedisEvalParallelSampler(host="131.220.224.226",
                                                        port=port,
-                                                       look_ahead = True)
+                                                       look_ahead = True, 
+						       look_ahead_delay_evaluation = True)
 
 histories=[]
 runtimes=np.zeros(iters_PPP)
@@ -175,7 +183,7 @@ for pop_size in pop_sizes:
 
 # In[ ]:
 
-redis_sampler = pyabc.sampler.RedisEvalParallelSampler(host="localhost",
+redis_sampler = pyabc.sampler.RedisEvalParallelSampler(host="131.220.224.226",
                                                        port=port,
                                                        look_ahead = False)
 
