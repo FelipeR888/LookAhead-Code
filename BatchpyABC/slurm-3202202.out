@@ -1,0 +1,1441 @@
+#### This is the worker script job ####
+INFO:Redis-Worker:Start redis worker. Max run time 86400.0s, HOST=jwc04n050.juwels, PID=7558
+INFO:Redis-Worker:Start redis worker. Max run time 86400.0s, HOST=jwc04n050.juwels, PID=7559
+INFO:Redis-Worker:Start redis worker. Max run time 86400.0s, HOST=jwc04n050.juwels, PID=7560
+INFO:Redis-Worker:Start redis worker. Max run time 86400.0s, HOST=jwc04n050.juwels, PID=7561
+INFO:Redis-Worker:Start redis worker. Max run time 86400.0s, HOST=jwc04n050.juwels, PID=7562
+INFO:Redis-Worker:Start redis worker. Max run time 86400.0s, HOST=jwc04n050.juwels, PID=7563
+INFO:Redis-Worker:Start redis worker. Max run time 86400.0s, HOST=jwc04n050.juwels, PID=7564
+INFO:Redis-Worker:Start redis worker. Max run time 86400.0s, HOST=jwc04n050.juwels, PID=7565
+INFO:Redis-Worker:Start redis worker. Max run time 86400.0s, HOST=jwc04n050.juwels, PID=7566
+INFO:Redis-Worker:Start redis worker. Max run time 86400.0s, HOST=jwc04n050.juwels, PID=7567
+INFO:Redis-Worker:Start redis worker. Max run time 86400.0s, HOST=jwc04n050.juwels, PID=7568
+INFO:Redis-Worker:Start redis worker. Max run time 86400.0s, HOST=jwc04n050.juwels, PID=7569
+INFO:Redis-Worker:Start redis worker. Max run time 86400.0s, HOST=jwc04n050.juwels, PID=7570
+INFO:Redis-Worker:Start redis worker. Max run time 86400.0s, HOST=jwc04n050.juwels, PID=7571
+Process Process-1:
+Traceback (most recent call last):
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/connection.py", line 559, in connect
+    sock = self._connect()
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/connection.py", line 584, in _connect
+    for res in socket.getaddrinfo(self.host, self.port, self.socket_type,
+  File "/p/software/juwels/stages/2020/software/Python/3.8.5-GCCcore-9.3.0/lib/python3.8/socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name or service not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/p/software/juwels/stages/2020/software/Python/3.8.5-GCCcore-9.3.0/lib/python3.8/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/p/software/juwels/stages/2020/software/Python/3.8.5-GCCcore-9.3.0/lib/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/p/home/jusers/reck1/juwels/pyABC/pyabc/sampler/redis_eps/cli.py", line 99, in _work
+    p.subscribe(MSG)
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/client.py", line 3580, in subscribe
+    ret_val = self.execute_command('SUBSCRIBE', *iterkeys(new_channels))
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/client.py", line 3466, in execute_command
+    self.connection = self.connection_pool.get_connection(
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/connection.py", line 1192, in get_connection
+    connection.connect()
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/connection.py", line 563, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error -2 connecting to found::6358. Name or service not known.
+Process Process-13:
+Traceback (most recent call last):
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/connection.py", line 559, in connect
+    sock = self._connect()
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/connection.py", line 584, in _connect
+    for res in socket.getaddrinfo(self.host, self.port, self.socket_type,
+  File "/p/software/juwels/stages/2020/software/Python/3.8.5-GCCcore-9.3.0/lib/python3.8/socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name or service not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/p/software/juwels/stages/2020/software/Python/3.8.5-GCCcore-9.3.0/lib/python3.8/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/p/software/juwels/stages/2020/software/Python/3.8.5-GCCcore-9.3.0/lib/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/p/home/jusers/reck1/juwels/pyABC/pyabc/sampler/redis_eps/cli.py", line 99, in _work
+    p.subscribe(MSG)
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/client.py", line 3580, in subscribe
+    ret_val = self.execute_command('SUBSCRIBE', *iterkeys(new_channels))
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/client.py", line 3466, in execute_command
+    self.connection = self.connection_pool.get_connection(
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/connection.py", line 1192, in get_connection
+    connection.connect()
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/connection.py", line 563, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error -2 connecting to found::6358. Name or service not known.
+Process Process-2:
+Traceback (most recent call last):
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/connection.py", line 559, in connect
+    sock = self._connect()
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/connection.py", line 584, in _connect
+    for res in socket.getaddrinfo(self.host, self.port, self.socket_type,
+  File "/p/software/juwels/stages/2020/software/Python/3.8.5-GCCcore-9.3.0/lib/python3.8/socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name or service not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/p/software/juwels/stages/2020/software/Python/3.8.5-GCCcore-9.3.0/lib/python3.8/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/p/software/juwels/stages/2020/software/Python/3.8.5-GCCcore-9.3.0/lib/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/p/home/jusers/reck1/juwels/pyABC/pyabc/sampler/redis_eps/cli.py", line 99, in _work
+    p.subscribe(MSG)
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/client.py", line 3580, in subscribe
+    ret_val = self.execute_command('SUBSCRIBE', *iterkeys(new_channels))
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/client.py", line 3466, in execute_command
+    self.connection = self.connection_pool.get_connection(
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/connection.py", line 1192, in get_connection
+    connection.connect()
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/connection.py", line 563, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error -2 connecting to found::6358. Name or service not known.
+Process Process-11:
+Traceback (most recent call last):
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/connection.py", line 559, in connect
+    sock = self._connect()
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/connection.py", line 584, in _connect
+    for res in socket.getaddrinfo(self.host, self.port, self.socket_type,
+  File "/p/software/juwels/stages/2020/software/Python/3.8.5-GCCcore-9.3.0/lib/python3.8/socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name or service not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/p/software/juwels/stages/2020/software/Python/3.8.5-GCCcore-9.3.0/lib/python3.8/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/p/software/juwels/stages/2020/software/Python/3.8.5-GCCcore-9.3.0/lib/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/p/home/jusers/reck1/juwels/pyABC/pyabc/sampler/redis_eps/cli.py", line 99, in _work
+    p.subscribe(MSG)
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/client.py", line 3580, in subscribe
+    ret_val = self.execute_command('SUBSCRIBE', *iterkeys(new_channels))
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/client.py", line 3466, in execute_command
+    self.connection = self.connection_pool.get_connection(
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/connection.py", line 1192, in get_connection
+    connection.connect()
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/connection.py", line 563, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error -2 connecting to found::6358. Name or service not known.
+Process Process-12:
+Traceback (most recent call last):
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/connection.py", line 559, in connect
+    sock = self._connect()
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/connection.py", line 584, in _connect
+    for res in socket.getaddrinfo(self.host, self.port, self.socket_type,
+  File "/p/software/juwels/stages/2020/software/Python/3.8.5-GCCcore-9.3.0/lib/python3.8/socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name or service not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/p/software/juwels/stages/2020/software/Python/3.8.5-GCCcore-9.3.0/lib/python3.8/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/p/software/juwels/stages/2020/software/Python/3.8.5-GCCcore-9.3.0/lib/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/p/home/jusers/reck1/juwels/pyABC/pyabc/sampler/redis_eps/cli.py", line 99, in _work
+    p.subscribe(MSG)
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/client.py", line 3580, in subscribe
+    ret_val = self.execute_command('SUBSCRIBE', *iterkeys(new_channels))
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/client.py", line 3466, in execute_command
+    self.connection = self.connection_pool.get_connection(
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/connection.py", line 1192, in get_connection
+    connection.connect()
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/connection.py", line 563, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error -2 connecting to found::6358. Name or service not known.
+Process Process-5:
+Traceback (most recent call last):
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/connection.py", line 559, in connect
+    sock = self._connect()
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/connection.py", line 584, in _connect
+    for res in socket.getaddrinfo(self.host, self.port, self.socket_type,
+  File "/p/software/juwels/stages/2020/software/Python/3.8.5-GCCcore-9.3.0/lib/python3.8/socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name or service not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/p/software/juwels/stages/2020/software/Python/3.8.5-GCCcore-9.3.0/lib/python3.8/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/p/software/juwels/stages/2020/software/Python/3.8.5-GCCcore-9.3.0/lib/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/p/home/jusers/reck1/juwels/pyABC/pyabc/sampler/redis_eps/cli.py", line 99, in _work
+    p.subscribe(MSG)
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/client.py", line 3580, in subscribe
+    ret_val = self.execute_command('SUBSCRIBE', *iterkeys(new_channels))
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/client.py", line 3466, in execute_command
+    self.connection = self.connection_pool.get_connection(
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/connection.py", line 1192, in get_connection
+    connection.connect()
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/connection.py", line 563, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error -2 connecting to found::6358. Name or service not known.
+Process Process-10:
+Traceback (most recent call last):
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/connection.py", line 559, in connect
+    sock = self._connect()
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/connection.py", line 584, in _connect
+    for res in socket.getaddrinfo(self.host, self.port, self.socket_type,
+  File "/p/software/juwels/stages/2020/software/Python/3.8.5-GCCcore-9.3.0/lib/python3.8/socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name or service not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/p/software/juwels/stages/2020/software/Python/3.8.5-GCCcore-9.3.0/lib/python3.8/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/p/software/juwels/stages/2020/software/Python/3.8.5-GCCcore-9.3.0/lib/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/p/home/jusers/reck1/juwels/pyABC/pyabc/sampler/redis_eps/cli.py", line 99, in _work
+    p.subscribe(MSG)
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/client.py", line 3580, in subscribe
+    ret_val = self.execute_command('SUBSCRIBE', *iterkeys(new_channels))
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/client.py", line 3466, in execute_command
+    self.connection = self.connection_pool.get_connection(
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/connection.py", line 1192, in get_connection
+    connection.connect()
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/connection.py", line 563, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error -2 connecting to found::6358. Name or service not known.
+Process Process-3:
+Traceback (most recent call last):
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/connection.py", line 559, in connect
+    sock = self._connect()
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/connection.py", line 584, in _connect
+    for res in socket.getaddrinfo(self.host, self.port, self.socket_type,
+  File "/p/software/juwels/stages/2020/software/Python/3.8.5-GCCcore-9.3.0/lib/python3.8/socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name or service not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/p/software/juwels/stages/2020/software/Python/3.8.5-GCCcore-9.3.0/lib/python3.8/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/p/software/juwels/stages/2020/software/Python/3.8.5-GCCcore-9.3.0/lib/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/p/home/jusers/reck1/juwels/pyABC/pyabc/sampler/redis_eps/cli.py", line 99, in _work
+    p.subscribe(MSG)
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/client.py", line 3580, in subscribe
+    ret_val = self.execute_command('SUBSCRIBE', *iterkeys(new_channels))
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/client.py", line 3466, in execute_command
+    self.connection = self.connection_pool.get_connection(
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/connection.py", line 1192, in get_connection
+    connection.connect()
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/connection.py", line 563, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error -2 connecting to found::6358. Name or service not known.
+Process Process-14:
+Traceback (most recent call last):
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/connection.py", line 559, in connect
+    sock = self._connect()
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/connection.py", line 584, in _connect
+    for res in socket.getaddrinfo(self.host, self.port, self.socket_type,
+  File "/p/software/juwels/stages/2020/software/Python/3.8.5-GCCcore-9.3.0/lib/python3.8/socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name or service not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/p/software/juwels/stages/2020/software/Python/3.8.5-GCCcore-9.3.0/lib/python3.8/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/p/software/juwels/stages/2020/software/Python/3.8.5-GCCcore-9.3.0/lib/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/p/home/jusers/reck1/juwels/pyABC/pyabc/sampler/redis_eps/cli.py", line 99, in _work
+    p.subscribe(MSG)
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/client.py", line 3580, in subscribe
+    ret_val = self.execute_command('SUBSCRIBE', *iterkeys(new_channels))
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/client.py", line 3466, in execute_command
+    self.connection = self.connection_pool.get_connection(
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/connection.py", line 1192, in get_connection
+    connection.connect()
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/connection.py", line 563, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error -2 connecting to found::6358. Name or service not known.
+Process Process-8:
+Traceback (most recent call last):
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/connection.py", line 559, in connect
+    sock = self._connect()
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/connection.py", line 584, in _connect
+    for res in socket.getaddrinfo(self.host, self.port, self.socket_type,
+  File "/p/software/juwels/stages/2020/software/Python/3.8.5-GCCcore-9.3.0/lib/python3.8/socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name or service not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/p/software/juwels/stages/2020/software/Python/3.8.5-GCCcore-9.3.0/lib/python3.8/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/p/software/juwels/stages/2020/software/Python/3.8.5-GCCcore-9.3.0/lib/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/p/home/jusers/reck1/juwels/pyABC/pyabc/sampler/redis_eps/cli.py", line 99, in _work
+    p.subscribe(MSG)
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/client.py", line 3580, in subscribe
+    ret_val = self.execute_command('SUBSCRIBE', *iterkeys(new_channels))
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/client.py", line 3466, in execute_command
+    self.connection = self.connection_pool.get_connection(
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/connection.py", line 1192, in get_connection
+    connection.connect()
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/connection.py", line 563, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error -2 connecting to found::6358. Name or service not known.
+Process Process-6:
+Traceback (most recent call last):
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/connection.py", line 559, in connect
+    sock = self._connect()
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/connection.py", line 584, in _connect
+    for res in socket.getaddrinfo(self.host, self.port, self.socket_type,
+  File "/p/software/juwels/stages/2020/software/Python/3.8.5-GCCcore-9.3.0/lib/python3.8/socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name or service not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/p/software/juwels/stages/2020/software/Python/3.8.5-GCCcore-9.3.0/lib/python3.8/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/p/software/juwels/stages/2020/software/Python/3.8.5-GCCcore-9.3.0/lib/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/p/home/jusers/reck1/juwels/pyABC/pyabc/sampler/redis_eps/cli.py", line 99, in _work
+    p.subscribe(MSG)
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/client.py", line 3580, in subscribe
+    ret_val = self.execute_command('SUBSCRIBE', *iterkeys(new_channels))
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/client.py", line 3466, in execute_command
+    self.connection = self.connection_pool.get_connection(
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/connection.py", line 1192, in get_connection
+    connection.connect()
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/connection.py", line 563, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error -2 connecting to found::6358. Name or service not known.
+Process Process-7:
+Traceback (most recent call last):
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/connection.py", line 559, in connect
+    sock = self._connect()
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/connection.py", line 584, in _connect
+    for res in socket.getaddrinfo(self.host, self.port, self.socket_type,
+  File "/p/software/juwels/stages/2020/software/Python/3.8.5-GCCcore-9.3.0/lib/python3.8/socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name or service not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/p/software/juwels/stages/2020/software/Python/3.8.5-GCCcore-9.3.0/lib/python3.8/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/p/software/juwels/stages/2020/software/Python/3.8.5-GCCcore-9.3.0/lib/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/p/home/jusers/reck1/juwels/pyABC/pyabc/sampler/redis_eps/cli.py", line 99, in _work
+    p.subscribe(MSG)
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/client.py", line 3580, in subscribe
+    ret_val = self.execute_command('SUBSCRIBE', *iterkeys(new_channels))
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/client.py", line 3466, in execute_command
+    self.connection = self.connection_pool.get_connection(
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/connection.py", line 1192, in get_connection
+    connection.connect()
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/connection.py", line 563, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error -2 connecting to found::6358. Name or service not known.
+Process Process-4:
+Traceback (most recent call last):
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/connection.py", line 559, in connect
+    sock = self._connect()
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/connection.py", line 584, in _connect
+    for res in socket.getaddrinfo(self.host, self.port, self.socket_type,
+  File "/p/software/juwels/stages/2020/software/Python/3.8.5-GCCcore-9.3.0/lib/python3.8/socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name or service not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/p/software/juwels/stages/2020/software/Python/3.8.5-GCCcore-9.3.0/lib/python3.8/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/p/software/juwels/stages/2020/software/Python/3.8.5-GCCcore-9.3.0/lib/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/p/home/jusers/reck1/juwels/pyABC/pyabc/sampler/redis_eps/cli.py", line 99, in _work
+    p.subscribe(MSG)
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/client.py", line 3580, in subscribe
+    ret_val = self.execute_command('SUBSCRIBE', *iterkeys(new_channels))
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/client.py", line 3466, in execute_command
+    self.connection = self.connection_pool.get_connection(
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/connection.py", line 1192, in get_connection
+    connection.connect()
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/connection.py", line 563, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error -2 connecting to found::6358. Name or service not known.
+Process Process-9:
+Traceback (most recent call last):
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/connection.py", line 559, in connect
+    sock = self._connect()
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/connection.py", line 584, in _connect
+    for res in socket.getaddrinfo(self.host, self.port, self.socket_type,
+  File "/p/software/juwels/stages/2020/software/Python/3.8.5-GCCcore-9.3.0/lib/python3.8/socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name or service not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/p/software/juwels/stages/2020/software/Python/3.8.5-GCCcore-9.3.0/lib/python3.8/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/p/software/juwels/stages/2020/software/Python/3.8.5-GCCcore-9.3.0/lib/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/p/home/jusers/reck1/juwels/pyABC/pyabc/sampler/redis_eps/cli.py", line 99, in _work
+    p.subscribe(MSG)
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/client.py", line 3580, in subscribe
+    ret_val = self.execute_command('SUBSCRIBE', *iterkeys(new_channels))
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/client.py", line 3466, in execute_command
+    self.connection = self.connection_pool.get_connection(
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/connection.py", line 1192, in get_connection
+    connection.connect()
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/connection.py", line 563, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error -2 connecting to found::6358. Name or service not known.
+INFO:Redis-Worker:Start redis worker. Max run time 86400.0s, HOST=jwc04n050.juwels, PID=7572
+Process Process-15:
+Traceback (most recent call last):
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/connection.py", line 559, in connect
+    sock = self._connect()
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/connection.py", line 584, in _connect
+    for res in socket.getaddrinfo(self.host, self.port, self.socket_type,
+  File "/p/software/juwels/stages/2020/software/Python/3.8.5-GCCcore-9.3.0/lib/python3.8/socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name or service not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/p/software/juwels/stages/2020/software/Python/3.8.5-GCCcore-9.3.0/lib/python3.8/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/p/software/juwels/stages/2020/software/Python/3.8.5-GCCcore-9.3.0/lib/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/p/home/jusers/reck1/juwels/pyABC/pyabc/sampler/redis_eps/cli.py", line 99, in _work
+    p.subscribe(MSG)
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/client.py", line 3580, in subscribe
+    ret_val = self.execute_command('SUBSCRIBE', *iterkeys(new_channels))
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/client.py", line 3466, in execute_command
+    self.connection = self.connection_pool.get_connection(
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/connection.py", line 1192, in get_connection
+    connection.connect()
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/connection.py", line 563, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error -2 connecting to found::6358. Name or service not known.
+INFO:Redis-Worker:Start redis worker. Max run time 86400.0s, HOST=jwc04n050.juwels, PID=7573
+Process Process-16:
+Traceback (most recent call last):
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/connection.py", line 559, in connect
+    sock = self._connect()
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/connection.py", line 584, in _connect
+    for res in socket.getaddrinfo(self.host, self.port, self.socket_type,
+  File "/p/software/juwels/stages/2020/software/Python/3.8.5-GCCcore-9.3.0/lib/python3.8/socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name or service not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/p/software/juwels/stages/2020/software/Python/3.8.5-GCCcore-9.3.0/lib/python3.8/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/p/software/juwels/stages/2020/software/Python/3.8.5-GCCcore-9.3.0/lib/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/p/home/jusers/reck1/juwels/pyABC/pyabc/sampler/redis_eps/cli.py", line 99, in _work
+    p.subscribe(MSG)
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/client.py", line 3580, in subscribe
+    ret_val = self.execute_command('SUBSCRIBE', *iterkeys(new_channels))
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/client.py", line 3466, in execute_command
+    self.connection = self.connection_pool.get_connection(
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/connection.py", line 1192, in get_connection
+    connection.connect()
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/connection.py", line 563, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error -2 connecting to found::6358. Name or service not known.
+INFO:Redis-Worker:Start redis worker. Max run time 86400.0s, HOST=jwc04n050.juwels, PID=7574
+Process Process-17:
+Traceback (most recent call last):
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/connection.py", line 559, in connect
+    sock = self._connect()
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/connection.py", line 584, in _connect
+    for res in socket.getaddrinfo(self.host, self.port, self.socket_type,
+  File "/p/software/juwels/stages/2020/software/Python/3.8.5-GCCcore-9.3.0/lib/python3.8/socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name or service not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/p/software/juwels/stages/2020/software/Python/3.8.5-GCCcore-9.3.0/lib/python3.8/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/p/software/juwels/stages/2020/software/Python/3.8.5-GCCcore-9.3.0/lib/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/p/home/jusers/reck1/juwels/pyABC/pyabc/sampler/redis_eps/cli.py", line 99, in _work
+    p.subscribe(MSG)
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/client.py", line 3580, in subscribe
+    ret_val = self.execute_command('SUBSCRIBE', *iterkeys(new_channels))
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/client.py", line 3466, in execute_command
+    self.connection = self.connection_pool.get_connection(
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/connection.py", line 1192, in get_connection
+    connection.connect()
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/connection.py", line 563, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error -2 connecting to found::6358. Name or service not known.
+INFO:Redis-Worker:Start redis worker. Max run time 86400.0s, HOST=jwc04n050.juwels, PID=7575
+Process Process-18:
+Traceback (most recent call last):
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/connection.py", line 559, in connect
+    sock = self._connect()
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/connection.py", line 584, in _connect
+    for res in socket.getaddrinfo(self.host, self.port, self.socket_type,
+  File "/p/software/juwels/stages/2020/software/Python/3.8.5-GCCcore-9.3.0/lib/python3.8/socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name or service not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/p/software/juwels/stages/2020/software/Python/3.8.5-GCCcore-9.3.0/lib/python3.8/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/p/software/juwels/stages/2020/software/Python/3.8.5-GCCcore-9.3.0/lib/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/p/home/jusers/reck1/juwels/pyABC/pyabc/sampler/redis_eps/cli.py", line 99, in _work
+    p.subscribe(MSG)
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/client.py", line 3580, in subscribe
+    ret_val = self.execute_command('SUBSCRIBE', *iterkeys(new_channels))
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/client.py", line 3466, in execute_command
+    self.connection = self.connection_pool.get_connection(
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/connection.py", line 1192, in get_connection
+    connection.connect()
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/connection.py", line 563, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error -2 connecting to found::6358. Name or service not known.
+INFO:Redis-Worker:Start redis worker. Max run time 86400.0s, HOST=jwc04n050.juwels, PID=7576
+Process Process-19:
+Traceback (most recent call last):
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/connection.py", line 559, in connect
+    sock = self._connect()
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/connection.py", line 584, in _connect
+    for res in socket.getaddrinfo(self.host, self.port, self.socket_type,
+  File "/p/software/juwels/stages/2020/software/Python/3.8.5-GCCcore-9.3.0/lib/python3.8/socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name or service not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/p/software/juwels/stages/2020/software/Python/3.8.5-GCCcore-9.3.0/lib/python3.8/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/p/software/juwels/stages/2020/software/Python/3.8.5-GCCcore-9.3.0/lib/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/p/home/jusers/reck1/juwels/pyABC/pyabc/sampler/redis_eps/cli.py", line 99, in _work
+    p.subscribe(MSG)
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/client.py", line 3580, in subscribe
+    ret_val = self.execute_command('SUBSCRIBE', *iterkeys(new_channels))
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/client.py", line 3466, in execute_command
+    self.connection = self.connection_pool.get_connection(
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/connection.py", line 1192, in get_connection
+    connection.connect()
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/connection.py", line 563, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error -2 connecting to found::6358. Name or service not known.
+INFO:Redis-Worker:Start redis worker. Max run time 86400.0s, HOST=jwc04n050.juwels, PID=7577
+Process Process-20:
+Traceback (most recent call last):
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/connection.py", line 559, in connect
+    sock = self._connect()
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/connection.py", line 584, in _connect
+    for res in socket.getaddrinfo(self.host, self.port, self.socket_type,
+  File "/p/software/juwels/stages/2020/software/Python/3.8.5-GCCcore-9.3.0/lib/python3.8/socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name or service not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/p/software/juwels/stages/2020/software/Python/3.8.5-GCCcore-9.3.0/lib/python3.8/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/p/software/juwels/stages/2020/software/Python/3.8.5-GCCcore-9.3.0/lib/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/p/home/jusers/reck1/juwels/pyABC/pyabc/sampler/redis_eps/cli.py", line 99, in _work
+    p.subscribe(MSG)
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/client.py", line 3580, in subscribe
+    ret_val = self.execute_command('SUBSCRIBE', *iterkeys(new_channels))
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/client.py", line 3466, in execute_command
+    self.connection = self.connection_pool.get_connection(
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/connection.py", line 1192, in get_connection
+    connection.connect()
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/connection.py", line 563, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error -2 connecting to found::6358. Name or service not known.
+INFO:Redis-Worker:Start redis worker. Max run time 86400.0s, HOST=jwc04n050.juwels, PID=7578
+Process Process-21:
+Traceback (most recent call last):
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/connection.py", line 559, in connect
+    sock = self._connect()
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/connection.py", line 584, in _connect
+    for res in socket.getaddrinfo(self.host, self.port, self.socket_type,
+  File "/p/software/juwels/stages/2020/software/Python/3.8.5-GCCcore-9.3.0/lib/python3.8/socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name or service not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/p/software/juwels/stages/2020/software/Python/3.8.5-GCCcore-9.3.0/lib/python3.8/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/p/software/juwels/stages/2020/software/Python/3.8.5-GCCcore-9.3.0/lib/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/p/home/jusers/reck1/juwels/pyABC/pyabc/sampler/redis_eps/cli.py", line 99, in _work
+    p.subscribe(MSG)
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/client.py", line 3580, in subscribe
+    ret_val = self.execute_command('SUBSCRIBE', *iterkeys(new_channels))
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/client.py", line 3466, in execute_command
+    self.connection = self.connection_pool.get_connection(
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/connection.py", line 1192, in get_connection
+    connection.connect()
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/connection.py", line 563, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error -2 connecting to found::6358. Name or service not known.
+INFO:Redis-Worker:Start redis worker. Max run time 86400.0s, HOST=jwc04n050.juwels, PID=7579
+Process Process-22:
+Traceback (most recent call last):
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/connection.py", line 559, in connect
+    sock = self._connect()
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/connection.py", line 584, in _connect
+    for res in socket.getaddrinfo(self.host, self.port, self.socket_type,
+  File "/p/software/juwels/stages/2020/software/Python/3.8.5-GCCcore-9.3.0/lib/python3.8/socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name or service not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/p/software/juwels/stages/2020/software/Python/3.8.5-GCCcore-9.3.0/lib/python3.8/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/p/software/juwels/stages/2020/software/Python/3.8.5-GCCcore-9.3.0/lib/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/p/home/jusers/reck1/juwels/pyABC/pyabc/sampler/redis_eps/cli.py", line 99, in _work
+    p.subscribe(MSG)
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/client.py", line 3580, in subscribe
+    ret_val = self.execute_command('SUBSCRIBE', *iterkeys(new_channels))
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/client.py", line 3466, in execute_command
+    self.connection = self.connection_pool.get_connection(
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/connection.py", line 1192, in get_connection
+    connection.connect()
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/connection.py", line 563, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error -2 connecting to found::6358. Name or service not known.
+INFO:Redis-Worker:Start redis worker. Max run time 86400.0s, HOST=jwc04n050.juwels, PID=7580
+Process Process-23:
+Traceback (most recent call last):
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/connection.py", line 559, in connect
+    sock = self._connect()
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/connection.py", line 584, in _connect
+    for res in socket.getaddrinfo(self.host, self.port, self.socket_type,
+  File "/p/software/juwels/stages/2020/software/Python/3.8.5-GCCcore-9.3.0/lib/python3.8/socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name or service not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/p/software/juwels/stages/2020/software/Python/3.8.5-GCCcore-9.3.0/lib/python3.8/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/p/software/juwels/stages/2020/software/Python/3.8.5-GCCcore-9.3.0/lib/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/p/home/jusers/reck1/juwels/pyABC/pyabc/sampler/redis_eps/cli.py", line 99, in _work
+    p.subscribe(MSG)
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/client.py", line 3580, in subscribe
+    ret_val = self.execute_command('SUBSCRIBE', *iterkeys(new_channels))
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/client.py", line 3466, in execute_command
+    self.connection = self.connection_pool.get_connection(
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/connection.py", line 1192, in get_connection
+    connection.connect()
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/connection.py", line 563, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error -2 connecting to found::6358. Name or service not known.
+INFO:Redis-Worker:Start redis worker. Max run time 86400.0s, HOST=jwc04n050.juwels, PID=7581
+Process Process-24:
+Traceback (most recent call last):
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/connection.py", line 559, in connect
+    sock = self._connect()
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/connection.py", line 584, in _connect
+    for res in socket.getaddrinfo(self.host, self.port, self.socket_type,
+  File "/p/software/juwels/stages/2020/software/Python/3.8.5-GCCcore-9.3.0/lib/python3.8/socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name or service not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/p/software/juwels/stages/2020/software/Python/3.8.5-GCCcore-9.3.0/lib/python3.8/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/p/software/juwels/stages/2020/software/Python/3.8.5-GCCcore-9.3.0/lib/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/p/home/jusers/reck1/juwels/pyABC/pyabc/sampler/redis_eps/cli.py", line 99, in _work
+    p.subscribe(MSG)
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/client.py", line 3580, in subscribe
+    ret_val = self.execute_command('SUBSCRIBE', *iterkeys(new_channels))
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/client.py", line 3466, in execute_command
+    self.connection = self.connection_pool.get_connection(
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/connection.py", line 1192, in get_connection
+    connection.connect()
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/connection.py", line 563, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error -2 connecting to found::6358. Name or service not known.
+INFO:Redis-Worker:Start redis worker. Max run time 86400.0s, HOST=jwc04n050.juwels, PID=7582
+Process Process-25:
+Traceback (most recent call last):
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/connection.py", line 559, in connect
+    sock = self._connect()
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/connection.py", line 584, in _connect
+    for res in socket.getaddrinfo(self.host, self.port, self.socket_type,
+  File "/p/software/juwels/stages/2020/software/Python/3.8.5-GCCcore-9.3.0/lib/python3.8/socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name or service not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/p/software/juwels/stages/2020/software/Python/3.8.5-GCCcore-9.3.0/lib/python3.8/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/p/software/juwels/stages/2020/software/Python/3.8.5-GCCcore-9.3.0/lib/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/p/home/jusers/reck1/juwels/pyABC/pyabc/sampler/redis_eps/cli.py", line 99, in _work
+    p.subscribe(MSG)
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/client.py", line 3580, in subscribe
+    ret_val = self.execute_command('SUBSCRIBE', *iterkeys(new_channels))
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/client.py", line 3466, in execute_command
+    self.connection = self.connection_pool.get_connection(
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/connection.py", line 1192, in get_connection
+    connection.connect()
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/connection.py", line 563, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error -2 connecting to found::6358. Name or service not known.
+INFO:Redis-Worker:Start redis worker. Max run time 86400.0s, HOST=jwc04n050.juwels, PID=7583
+Process Process-26:
+Traceback (most recent call last):
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/connection.py", line 559, in connect
+    sock = self._connect()
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/connection.py", line 584, in _connect
+    for res in socket.getaddrinfo(self.host, self.port, self.socket_type,
+  File "/p/software/juwels/stages/2020/software/Python/3.8.5-GCCcore-9.3.0/lib/python3.8/socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name or service not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/p/software/juwels/stages/2020/software/Python/3.8.5-GCCcore-9.3.0/lib/python3.8/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/p/software/juwels/stages/2020/software/Python/3.8.5-GCCcore-9.3.0/lib/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/p/home/jusers/reck1/juwels/pyABC/pyabc/sampler/redis_eps/cli.py", line 99, in _work
+    p.subscribe(MSG)
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/client.py", line 3580, in subscribe
+    ret_val = self.execute_command('SUBSCRIBE', *iterkeys(new_channels))
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/client.py", line 3466, in execute_command
+    self.connection = self.connection_pool.get_connection(
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/connection.py", line 1192, in get_connection
+    connection.connect()
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/connection.py", line 563, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error -2 connecting to found::6358. Name or service not known.
+INFO:Redis-Worker:Start redis worker. Max run time 86400.0s, HOST=jwc04n050.juwels, PID=7584
+Process Process-27:
+Traceback (most recent call last):
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/connection.py", line 559, in connect
+    sock = self._connect()
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/connection.py", line 584, in _connect
+    for res in socket.getaddrinfo(self.host, self.port, self.socket_type,
+  File "/p/software/juwels/stages/2020/software/Python/3.8.5-GCCcore-9.3.0/lib/python3.8/socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name or service not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/p/software/juwels/stages/2020/software/Python/3.8.5-GCCcore-9.3.0/lib/python3.8/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/p/software/juwels/stages/2020/software/Python/3.8.5-GCCcore-9.3.0/lib/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/p/home/jusers/reck1/juwels/pyABC/pyabc/sampler/redis_eps/cli.py", line 99, in _work
+    p.subscribe(MSG)
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/client.py", line 3580, in subscribe
+    ret_val = self.execute_command('SUBSCRIBE', *iterkeys(new_channels))
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/client.py", line 3466, in execute_command
+    self.connection = self.connection_pool.get_connection(
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/connection.py", line 1192, in get_connection
+    connection.connect()
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/connection.py", line 563, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error -2 connecting to found::6358. Name or service not known.
+INFO:Redis-Worker:Start redis worker. Max run time 86400.0s, HOST=jwc04n050.juwels, PID=7585
+Process Process-28:
+Traceback (most recent call last):
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/connection.py", line 559, in connect
+    sock = self._connect()
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/connection.py", line 584, in _connect
+    for res in socket.getaddrinfo(self.host, self.port, self.socket_type,
+  File "/p/software/juwels/stages/2020/software/Python/3.8.5-GCCcore-9.3.0/lib/python3.8/socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name or service not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/p/software/juwels/stages/2020/software/Python/3.8.5-GCCcore-9.3.0/lib/python3.8/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/p/software/juwels/stages/2020/software/Python/3.8.5-GCCcore-9.3.0/lib/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/p/home/jusers/reck1/juwels/pyABC/pyabc/sampler/redis_eps/cli.py", line 99, in _work
+    p.subscribe(MSG)
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/client.py", line 3580, in subscribe
+    ret_val = self.execute_command('SUBSCRIBE', *iterkeys(new_channels))
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/client.py", line 3466, in execute_command
+    self.connection = self.connection_pool.get_connection(
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/connection.py", line 1192, in get_connection
+    connection.connect()
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/connection.py", line 563, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error -2 connecting to found::6358. Name or service not known.
+INFO:Redis-Worker:Start redis worker. Max run time 86400.0s, HOST=jwc04n050.juwels, PID=7586
+Process Process-29:
+Traceback (most recent call last):
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/connection.py", line 559, in connect
+    sock = self._connect()
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/connection.py", line 584, in _connect
+    for res in socket.getaddrinfo(self.host, self.port, self.socket_type,
+  File "/p/software/juwels/stages/2020/software/Python/3.8.5-GCCcore-9.3.0/lib/python3.8/socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name or service not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/p/software/juwels/stages/2020/software/Python/3.8.5-GCCcore-9.3.0/lib/python3.8/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/p/software/juwels/stages/2020/software/Python/3.8.5-GCCcore-9.3.0/lib/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/p/home/jusers/reck1/juwels/pyABC/pyabc/sampler/redis_eps/cli.py", line 99, in _work
+    p.subscribe(MSG)
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/client.py", line 3580, in subscribe
+    ret_val = self.execute_command('SUBSCRIBE', *iterkeys(new_channels))
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/client.py", line 3466, in execute_command
+    self.connection = self.connection_pool.get_connection(
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/connection.py", line 1192, in get_connection
+    connection.connect()
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/connection.py", line 563, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error -2 connecting to found::6358. Name or service not known.
+INFO:Redis-Worker:Start redis worker. Max run time 86400.0s, HOST=jwc04n050.juwels, PID=7587
+Process Process-30:
+Traceback (most recent call last):
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/connection.py", line 559, in connect
+    sock = self._connect()
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/connection.py", line 584, in _connect
+    for res in socket.getaddrinfo(self.host, self.port, self.socket_type,
+  File "/p/software/juwels/stages/2020/software/Python/3.8.5-GCCcore-9.3.0/lib/python3.8/socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name or service not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/p/software/juwels/stages/2020/software/Python/3.8.5-GCCcore-9.3.0/lib/python3.8/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/p/software/juwels/stages/2020/software/Python/3.8.5-GCCcore-9.3.0/lib/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/p/home/jusers/reck1/juwels/pyABC/pyabc/sampler/redis_eps/cli.py", line 99, in _work
+    p.subscribe(MSG)
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/client.py", line 3580, in subscribe
+    ret_val = self.execute_command('SUBSCRIBE', *iterkeys(new_channels))
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/client.py", line 3466, in execute_command
+    self.connection = self.connection_pool.get_connection(
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/connection.py", line 1192, in get_connection
+    connection.connect()
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/connection.py", line 563, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error -2 connecting to found::6358. Name or service not known.
+INFO:Redis-Worker:Start redis worker. Max run time 86400.0s, HOST=jwc04n050.juwels, PID=7588
+Process Process-31:
+Traceback (most recent call last):
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/connection.py", line 559, in connect
+    sock = self._connect()
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/connection.py", line 584, in _connect
+    for res in socket.getaddrinfo(self.host, self.port, self.socket_type,
+  File "/p/software/juwels/stages/2020/software/Python/3.8.5-GCCcore-9.3.0/lib/python3.8/socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name or service not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/p/software/juwels/stages/2020/software/Python/3.8.5-GCCcore-9.3.0/lib/python3.8/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/p/software/juwels/stages/2020/software/Python/3.8.5-GCCcore-9.3.0/lib/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/p/home/jusers/reck1/juwels/pyABC/pyabc/sampler/redis_eps/cli.py", line 99, in _work
+    p.subscribe(MSG)
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/client.py", line 3580, in subscribe
+    ret_val = self.execute_command('SUBSCRIBE', *iterkeys(new_channels))
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/client.py", line 3466, in execute_command
+    self.connection = self.connection_pool.get_connection(
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/connection.py", line 1192, in get_connection
+    connection.connect()
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/connection.py", line 563, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error -2 connecting to found::6358. Name or service not known.
+INFO:Redis-Worker:Start redis worker. Max run time 86400.0s, HOST=jwc04n050.juwels, PID=7589
+Process Process-32:
+Traceback (most recent call last):
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/connection.py", line 559, in connect
+    sock = self._connect()
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/connection.py", line 584, in _connect
+    for res in socket.getaddrinfo(self.host, self.port, self.socket_type,
+  File "/p/software/juwels/stages/2020/software/Python/3.8.5-GCCcore-9.3.0/lib/python3.8/socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name or service not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/p/software/juwels/stages/2020/software/Python/3.8.5-GCCcore-9.3.0/lib/python3.8/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/p/software/juwels/stages/2020/software/Python/3.8.5-GCCcore-9.3.0/lib/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/p/home/jusers/reck1/juwels/pyABC/pyabc/sampler/redis_eps/cli.py", line 99, in _work
+    p.subscribe(MSG)
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/client.py", line 3580, in subscribe
+    ret_val = self.execute_command('SUBSCRIBE', *iterkeys(new_channels))
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/client.py", line 3466, in execute_command
+    self.connection = self.connection_pool.get_connection(
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/connection.py", line 1192, in get_connection
+    connection.connect()
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/connection.py", line 563, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error -2 connecting to found::6358. Name or service not known.
+INFO:Redis-Worker:Start redis worker. Max run time 86400.0s, HOST=jwc04n050.juwels, PID=7590
+Process Process-33:
+Traceback (most recent call last):
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/connection.py", line 559, in connect
+    sock = self._connect()
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/connection.py", line 584, in _connect
+    for res in socket.getaddrinfo(self.host, self.port, self.socket_type,
+  File "/p/software/juwels/stages/2020/software/Python/3.8.5-GCCcore-9.3.0/lib/python3.8/socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name or service not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/p/software/juwels/stages/2020/software/Python/3.8.5-GCCcore-9.3.0/lib/python3.8/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/p/software/juwels/stages/2020/software/Python/3.8.5-GCCcore-9.3.0/lib/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/p/home/jusers/reck1/juwels/pyABC/pyabc/sampler/redis_eps/cli.py", line 99, in _work
+    p.subscribe(MSG)
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/client.py", line 3580, in subscribe
+    ret_val = self.execute_command('SUBSCRIBE', *iterkeys(new_channels))
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/client.py", line 3466, in execute_command
+    self.connection = self.connection_pool.get_connection(
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/connection.py", line 1192, in get_connection
+    connection.connect()
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/connection.py", line 563, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error -2 connecting to found::6358. Name or service not known.
+INFO:Redis-Worker:Start redis worker. Max run time 86400.0s, HOST=jwc04n050.juwels, PID=7591
+Process Process-34:
+Traceback (most recent call last):
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/connection.py", line 559, in connect
+    sock = self._connect()
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/connection.py", line 584, in _connect
+    for res in socket.getaddrinfo(self.host, self.port, self.socket_type,
+  File "/p/software/juwels/stages/2020/software/Python/3.8.5-GCCcore-9.3.0/lib/python3.8/socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name or service not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/p/software/juwels/stages/2020/software/Python/3.8.5-GCCcore-9.3.0/lib/python3.8/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/p/software/juwels/stages/2020/software/Python/3.8.5-GCCcore-9.3.0/lib/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/p/home/jusers/reck1/juwels/pyABC/pyabc/sampler/redis_eps/cli.py", line 99, in _work
+    p.subscribe(MSG)
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/client.py", line 3580, in subscribe
+    ret_val = self.execute_command('SUBSCRIBE', *iterkeys(new_channels))
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/client.py", line 3466, in execute_command
+    self.connection = self.connection_pool.get_connection(
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/connection.py", line 1192, in get_connection
+    connection.connect()
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/connection.py", line 563, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error -2 connecting to found::6358. Name or service not known.
+INFO:Redis-Worker:Start redis worker. Max run time 86400.0s, HOST=jwc04n050.juwels, PID=7592
+Process Process-35:
+Traceback (most recent call last):
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/connection.py", line 559, in connect
+    sock = self._connect()
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/connection.py", line 584, in _connect
+    for res in socket.getaddrinfo(self.host, self.port, self.socket_type,
+  File "/p/software/juwels/stages/2020/software/Python/3.8.5-GCCcore-9.3.0/lib/python3.8/socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name or service not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/p/software/juwels/stages/2020/software/Python/3.8.5-GCCcore-9.3.0/lib/python3.8/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/p/software/juwels/stages/2020/software/Python/3.8.5-GCCcore-9.3.0/lib/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/p/home/jusers/reck1/juwels/pyABC/pyabc/sampler/redis_eps/cli.py", line 99, in _work
+    p.subscribe(MSG)
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/client.py", line 3580, in subscribe
+    ret_val = self.execute_command('SUBSCRIBE', *iterkeys(new_channels))
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/client.py", line 3466, in execute_command
+    self.connection = self.connection_pool.get_connection(
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/connection.py", line 1192, in get_connection
+    connection.connect()
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/connection.py", line 563, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error -2 connecting to found::6358. Name or service not known.
+INFO:Redis-Worker:Start redis worker. Max run time 86400.0s, HOST=jwc04n050.juwels, PID=7593
+Process Process-36:
+Traceback (most recent call last):
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/connection.py", line 559, in connect
+    sock = self._connect()
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/connection.py", line 584, in _connect
+    for res in socket.getaddrinfo(self.host, self.port, self.socket_type,
+  File "/p/software/juwels/stages/2020/software/Python/3.8.5-GCCcore-9.3.0/lib/python3.8/socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name or service not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/p/software/juwels/stages/2020/software/Python/3.8.5-GCCcore-9.3.0/lib/python3.8/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/p/software/juwels/stages/2020/software/Python/3.8.5-GCCcore-9.3.0/lib/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/p/home/jusers/reck1/juwels/pyABC/pyabc/sampler/redis_eps/cli.py", line 99, in _work
+    p.subscribe(MSG)
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/client.py", line 3580, in subscribe
+    ret_val = self.execute_command('SUBSCRIBE', *iterkeys(new_channels))
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/client.py", line 3466, in execute_command
+    self.connection = self.connection_pool.get_connection(
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/connection.py", line 1192, in get_connection
+    connection.connect()
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/connection.py", line 563, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error -2 connecting to found::6358. Name or service not known.
+INFO:Redis-Worker:Start redis worker. Max run time 86400.0s, HOST=jwc04n050.juwels, PID=7594
+Process Process-37:
+Traceback (most recent call last):
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/connection.py", line 559, in connect
+    sock = self._connect()
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/connection.py", line 584, in _connect
+    for res in socket.getaddrinfo(self.host, self.port, self.socket_type,
+  File "/p/software/juwels/stages/2020/software/Python/3.8.5-GCCcore-9.3.0/lib/python3.8/socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name or service not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/p/software/juwels/stages/2020/software/Python/3.8.5-GCCcore-9.3.0/lib/python3.8/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/p/software/juwels/stages/2020/software/Python/3.8.5-GCCcore-9.3.0/lib/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/p/home/jusers/reck1/juwels/pyABC/pyabc/sampler/redis_eps/cli.py", line 99, in _work
+    p.subscribe(MSG)
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/client.py", line 3580, in subscribe
+    ret_val = self.execute_command('SUBSCRIBE', *iterkeys(new_channels))
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/client.py", line 3466, in execute_command
+    self.connection = self.connection_pool.get_connection(
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/connection.py", line 1192, in get_connection
+    connection.connect()
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/connection.py", line 563, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error -2 connecting to found::6358. Name or service not known.
+INFO:Redis-Worker:Start redis worker. Max run time 86400.0s, HOST=jwc04n050.juwels, PID=7595
+Process Process-38:
+Traceback (most recent call last):
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/connection.py", line 559, in connect
+    sock = self._connect()
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/connection.py", line 584, in _connect
+    for res in socket.getaddrinfo(self.host, self.port, self.socket_type,
+  File "/p/software/juwels/stages/2020/software/Python/3.8.5-GCCcore-9.3.0/lib/python3.8/socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name or service not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/p/software/juwels/stages/2020/software/Python/3.8.5-GCCcore-9.3.0/lib/python3.8/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/p/software/juwels/stages/2020/software/Python/3.8.5-GCCcore-9.3.0/lib/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/p/home/jusers/reck1/juwels/pyABC/pyabc/sampler/redis_eps/cli.py", line 99, in _work
+    p.subscribe(MSG)
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/client.py", line 3580, in subscribe
+    ret_val = self.execute_command('SUBSCRIBE', *iterkeys(new_channels))
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/client.py", line 3466, in execute_command
+    self.connection = self.connection_pool.get_connection(
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/connection.py", line 1192, in get_connection
+    connection.connect()
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/connection.py", line 563, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error -2 connecting to found::6358. Name or service not known.
+INFO:Redis-Worker:Start redis worker. Max run time 86400.0s, HOST=jwc04n050.juwels, PID=7596
+Process Process-39:
+Traceback (most recent call last):
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/connection.py", line 559, in connect
+    sock = self._connect()
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/connection.py", line 584, in _connect
+    for res in socket.getaddrinfo(self.host, self.port, self.socket_type,
+  File "/p/software/juwels/stages/2020/software/Python/3.8.5-GCCcore-9.3.0/lib/python3.8/socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name or service not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/p/software/juwels/stages/2020/software/Python/3.8.5-GCCcore-9.3.0/lib/python3.8/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/p/software/juwels/stages/2020/software/Python/3.8.5-GCCcore-9.3.0/lib/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/p/home/jusers/reck1/juwels/pyABC/pyabc/sampler/redis_eps/cli.py", line 99, in _work
+    p.subscribe(MSG)
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/client.py", line 3580, in subscribe
+    ret_val = self.execute_command('SUBSCRIBE', *iterkeys(new_channels))
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/client.py", line 3466, in execute_command
+    self.connection = self.connection_pool.get_connection(
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/connection.py", line 1192, in get_connection
+    connection.connect()
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/connection.py", line 563, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error -2 connecting to found::6358. Name or service not known.
+INFO:Redis-Worker:Start redis worker. Max run time 86400.0s, HOST=jwc04n050.juwels, PID=7597
+Process Process-40:
+Traceback (most recent call last):
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/connection.py", line 559, in connect
+    sock = self._connect()
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/connection.py", line 584, in _connect
+    for res in socket.getaddrinfo(self.host, self.port, self.socket_type,
+  File "/p/software/juwels/stages/2020/software/Python/3.8.5-GCCcore-9.3.0/lib/python3.8/socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name or service not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/p/software/juwels/stages/2020/software/Python/3.8.5-GCCcore-9.3.0/lib/python3.8/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/p/software/juwels/stages/2020/software/Python/3.8.5-GCCcore-9.3.0/lib/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/p/home/jusers/reck1/juwels/pyABC/pyabc/sampler/redis_eps/cli.py", line 99, in _work
+    p.subscribe(MSG)
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/client.py", line 3580, in subscribe
+    ret_val = self.execute_command('SUBSCRIBE', *iterkeys(new_channels))
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/client.py", line 3466, in execute_command
+    self.connection = self.connection_pool.get_connection(
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/connection.py", line 1192, in get_connection
+    connection.connect()
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/connection.py", line 563, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error -2 connecting to found::6358. Name or service not known.
+INFO:Redis-Worker:Start redis worker. Max run time 86400.0s, HOST=jwc04n050.juwels, PID=7598
+Process Process-41:
+Traceback (most recent call last):
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/connection.py", line 559, in connect
+    sock = self._connect()
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/connection.py", line 584, in _connect
+    for res in socket.getaddrinfo(self.host, self.port, self.socket_type,
+  File "/p/software/juwels/stages/2020/software/Python/3.8.5-GCCcore-9.3.0/lib/python3.8/socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name or service not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/p/software/juwels/stages/2020/software/Python/3.8.5-GCCcore-9.3.0/lib/python3.8/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/p/software/juwels/stages/2020/software/Python/3.8.5-GCCcore-9.3.0/lib/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/p/home/jusers/reck1/juwels/pyABC/pyabc/sampler/redis_eps/cli.py", line 99, in _work
+    p.subscribe(MSG)
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/client.py", line 3580, in subscribe
+    ret_val = self.execute_command('SUBSCRIBE', *iterkeys(new_channels))
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/client.py", line 3466, in execute_command
+    self.connection = self.connection_pool.get_connection(
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/connection.py", line 1192, in get_connection
+    connection.connect()
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/connection.py", line 563, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error -2 connecting to found::6358. Name or service not known.
+INFO:Redis-Worker:Start redis worker. Max run time 86400.0s, HOST=jwc04n050.juwels, PID=7599
+Process Process-42:
+Traceback (most recent call last):
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/connection.py", line 559, in connect
+    sock = self._connect()
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/connection.py", line 584, in _connect
+    for res in socket.getaddrinfo(self.host, self.port, self.socket_type,
+  File "/p/software/juwels/stages/2020/software/Python/3.8.5-GCCcore-9.3.0/lib/python3.8/socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name or service not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/p/software/juwels/stages/2020/software/Python/3.8.5-GCCcore-9.3.0/lib/python3.8/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/p/software/juwels/stages/2020/software/Python/3.8.5-GCCcore-9.3.0/lib/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/p/home/jusers/reck1/juwels/pyABC/pyabc/sampler/redis_eps/cli.py", line 99, in _work
+    p.subscribe(MSG)
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/client.py", line 3580, in subscribe
+    ret_val = self.execute_command('SUBSCRIBE', *iterkeys(new_channels))
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/client.py", line 3466, in execute_command
+    self.connection = self.connection_pool.get_connection(
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/connection.py", line 1192, in get_connection
+    connection.connect()
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/connection.py", line 563, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error -2 connecting to found::6358. Name or service not known.
+INFO:Redis-Worker:Start redis worker. Max run time 86400.0s, HOST=jwc04n050.juwels, PID=7600
+Process Process-43:
+Traceback (most recent call last):
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/connection.py", line 559, in connect
+    sock = self._connect()
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/connection.py", line 584, in _connect
+    for res in socket.getaddrinfo(self.host, self.port, self.socket_type,
+  File "/p/software/juwels/stages/2020/software/Python/3.8.5-GCCcore-9.3.0/lib/python3.8/socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name or service not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/p/software/juwels/stages/2020/software/Python/3.8.5-GCCcore-9.3.0/lib/python3.8/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/p/software/juwels/stages/2020/software/Python/3.8.5-GCCcore-9.3.0/lib/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/p/home/jusers/reck1/juwels/pyABC/pyabc/sampler/redis_eps/cli.py", line 99, in _work
+    p.subscribe(MSG)
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/client.py", line 3580, in subscribe
+    ret_val = self.execute_command('SUBSCRIBE', *iterkeys(new_channels))
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/client.py", line 3466, in execute_command
+    self.connection = self.connection_pool.get_connection(
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/connection.py", line 1192, in get_connection
+    connection.connect()
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/connection.py", line 563, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error -2 connecting to found::6358. Name or service not known.
+INFO:Redis-Worker:Start redis worker. Max run time 86400.0s, HOST=jwc04n050.juwels, PID=7601
+Process Process-44:
+Traceback (most recent call last):
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/connection.py", line 559, in connect
+    sock = self._connect()
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/connection.py", line 584, in _connect
+    for res in socket.getaddrinfo(self.host, self.port, self.socket_type,
+  File "/p/software/juwels/stages/2020/software/Python/3.8.5-GCCcore-9.3.0/lib/python3.8/socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name or service not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/p/software/juwels/stages/2020/software/Python/3.8.5-GCCcore-9.3.0/lib/python3.8/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/p/software/juwels/stages/2020/software/Python/3.8.5-GCCcore-9.3.0/lib/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/p/home/jusers/reck1/juwels/pyABC/pyabc/sampler/redis_eps/cli.py", line 99, in _work
+    p.subscribe(MSG)
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/client.py", line 3580, in subscribe
+    ret_val = self.execute_command('SUBSCRIBE', *iterkeys(new_channels))
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/client.py", line 3466, in execute_command
+    self.connection = self.connection_pool.get_connection(
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/connection.py", line 1192, in get_connection
+    connection.connect()
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/connection.py", line 563, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error -2 connecting to found::6358. Name or service not known.
+INFO:Redis-Worker:Start redis worker. Max run time 86400.0s, HOST=jwc04n050.juwels, PID=7602
+Process Process-45:
+Traceback (most recent call last):
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/connection.py", line 559, in connect
+    sock = self._connect()
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/connection.py", line 584, in _connect
+    for res in socket.getaddrinfo(self.host, self.port, self.socket_type,
+  File "/p/software/juwels/stages/2020/software/Python/3.8.5-GCCcore-9.3.0/lib/python3.8/socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name or service not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/p/software/juwels/stages/2020/software/Python/3.8.5-GCCcore-9.3.0/lib/python3.8/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/p/software/juwels/stages/2020/software/Python/3.8.5-GCCcore-9.3.0/lib/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/p/home/jusers/reck1/juwels/pyABC/pyabc/sampler/redis_eps/cli.py", line 99, in _work
+    p.subscribe(MSG)
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/client.py", line 3580, in subscribe
+    ret_val = self.execute_command('SUBSCRIBE', *iterkeys(new_channels))
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/client.py", line 3466, in execute_command
+    self.connection = self.connection_pool.get_connection(
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/connection.py", line 1192, in get_connection
+    connection.connect()
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/connection.py", line 563, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error -2 connecting to found::6358. Name or service not known.
+INFO:Redis-Worker:Start redis worker. Max run time 86400.0s, HOST=jwc04n050.juwels, PID=7603
+Process Process-46:
+Traceback (most recent call last):
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/connection.py", line 559, in connect
+    sock = self._connect()
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/connection.py", line 584, in _connect
+    for res in socket.getaddrinfo(self.host, self.port, self.socket_type,
+  File "/p/software/juwels/stages/2020/software/Python/3.8.5-GCCcore-9.3.0/lib/python3.8/socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name or service not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/p/software/juwels/stages/2020/software/Python/3.8.5-GCCcore-9.3.0/lib/python3.8/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/p/software/juwels/stages/2020/software/Python/3.8.5-GCCcore-9.3.0/lib/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/p/home/jusers/reck1/juwels/pyABC/pyabc/sampler/redis_eps/cli.py", line 99, in _work
+    p.subscribe(MSG)
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/client.py", line 3580, in subscribe
+    ret_val = self.execute_command('SUBSCRIBE', *iterkeys(new_channels))
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/client.py", line 3466, in execute_command
+    self.connection = self.connection_pool.get_connection(
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/connection.py", line 1192, in get_connection
+    connection.connect()
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/connection.py", line 563, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error -2 connecting to found::6358. Name or service not known.
+INFO:Redis-Worker:Start redis worker. Max run time 86400.0s, HOST=jwc04n050.juwels, PID=7604
+Process Process-47:
+Traceback (most recent call last):
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/connection.py", line 559, in connect
+    sock = self._connect()
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/connection.py", line 584, in _connect
+    for res in socket.getaddrinfo(self.host, self.port, self.socket_type,
+  File "/p/software/juwels/stages/2020/software/Python/3.8.5-GCCcore-9.3.0/lib/python3.8/socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name or service not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/p/software/juwels/stages/2020/software/Python/3.8.5-GCCcore-9.3.0/lib/python3.8/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/p/software/juwels/stages/2020/software/Python/3.8.5-GCCcore-9.3.0/lib/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/p/home/jusers/reck1/juwels/pyABC/pyabc/sampler/redis_eps/cli.py", line 99, in _work
+    p.subscribe(MSG)
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/client.py", line 3580, in subscribe
+    ret_val = self.execute_command('SUBSCRIBE', *iterkeys(new_channels))
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/client.py", line 3466, in execute_command
+    self.connection = self.connection_pool.get_connection(
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/connection.py", line 1192, in get_connection
+    connection.connect()
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/connection.py", line 563, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error -2 connecting to found::6358. Name or service not known.
+INFO:Redis-Worker:Started subprocess with pid 7558
+INFO:Redis-Worker:Started subprocess with pid 7559
+INFO:Redis-Worker:Started subprocess with pid 7560
+INFO:Redis-Worker:Started subprocess with pid 7561
+INFO:Redis-Worker:Started subprocess with pid 7562
+INFO:Redis-Worker:Started subprocess with pid 7563
+INFO:Redis-Worker:Started subprocess with pid 7564
+INFO:Redis-Worker:Started subprocess with pid 7565
+INFO:Redis-Worker:Started subprocess with pid 7566
+INFO:Redis-Worker:Started subprocess with pid 7567
+INFO:Redis-Worker:Started subprocess with pid 7568
+INFO:Redis-Worker:Started subprocess with pid 7569
+INFO:Redis-Worker:Started subprocess with pid 7570
+INFO:Redis-Worker:Started subprocess with pid 7571
+INFO:Redis-Worker:Started subprocess with pid 7572
+INFO:Redis-Worker:Started subprocess with pid 7573
+INFO:Redis-Worker:Started subprocess with pid 7574
+INFO:Redis-Worker:Started subprocess with pid 7575
+INFO:Redis-Worker:Started subprocess with pid 7576
+INFO:Redis-Worker:Started subprocess with pid 7577
+INFO:Redis-Worker:Started subprocess with pid 7578
+INFO:Redis-Worker:Started subprocess with pid 7579
+INFO:Redis-Worker:Started subprocess with pid 7580
+INFO:Redis-Worker:Started subprocess with pid 7581
+INFO:Redis-Worker:Started subprocess with pid 7582
+INFO:Redis-Worker:Started subprocess with pid 7583
+INFO:Redis-Worker:Started subprocess with pid 7584
+INFO:Redis-Worker:Started subprocess with pid 7585
+INFO:Redis-Worker:Started subprocess with pid 7586
+INFO:Redis-Worker:Started subprocess with pid 7587
+INFO:Redis-Worker:Started subprocess with pid 7588
+INFO:Redis-Worker:Started subprocess with pid 7589
+INFO:Redis-Worker:Started subprocess with pid 7590
+INFO:Redis-Worker:Started subprocess with pid 7591
+INFO:Redis-Worker:Started subprocess with pid 7592
+INFO:Redis-Worker:Started subprocess with pid 7593
+INFO:Redis-Worker:Started subprocess with pid 7594
+INFO:Redis-Worker:Started subprocess with pid 7595
+INFO:Redis-Worker:Started subprocess with pid 7596
+INFO:Redis-Worker:Started subprocess with pid 7597
+INFO:Redis-Worker:Started subprocess with pid 7598
+INFO:Redis-Worker:Started subprocess with pid 7599
+INFO:Redis-Worker:Started subprocess with pid 7600
+INFO:Redis-Worker:Started subprocess with pid 7601
+INFO:Redis-Worker:Started subprocess with pid 7602
+INFO:Redis-Worker:Started subprocess with pid 7603
+INFO:Redis-Worker:Started subprocess with pid 7604
+INFO:Redis-Worker:Started subprocess with pid 7605
+INFO:Redis-Worker:Start redis worker. Max run time 86400.0s, HOST=jwc04n050.juwels, PID=7605
+Process Process-48:
+Traceback (most recent call last):
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/connection.py", line 559, in connect
+    sock = self._connect()
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/connection.py", line 584, in _connect
+    for res in socket.getaddrinfo(self.host, self.port, self.socket_type,
+  File "/p/software/juwels/stages/2020/software/Python/3.8.5-GCCcore-9.3.0/lib/python3.8/socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name or service not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/p/software/juwels/stages/2020/software/Python/3.8.5-GCCcore-9.3.0/lib/python3.8/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/p/software/juwels/stages/2020/software/Python/3.8.5-GCCcore-9.3.0/lib/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/p/home/jusers/reck1/juwels/pyABC/pyabc/sampler/redis_eps/cli.py", line 99, in _work
+    p.subscribe(MSG)
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/client.py", line 3580, in subscribe
+    ret_val = self.execute_command('SUBSCRIBE', *iterkeys(new_channels))
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/client.py", line 3466, in execute_command
+    self.connection = self.connection_pool.get_connection(
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/connection.py", line 1192, in get_connection
+    connection.connect()
+  File "/p/home/jusers/reck1/juwels/keksenv/lib/python3.8/site-packages/redis/connection.py", line 563, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error -2 connecting to found::6358. Name or service not known.
