@@ -1,4 +1,0 @@
-Traceback (most recent call last):
-  File "TumorModel.py", line 11, in <module>
-    import tumor2d
-ModuleNotFoundError: No module named 'tumor2d'

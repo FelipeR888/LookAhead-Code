@@ -8,12 +8,14 @@
 
 
 from time import time
-import tumor2d
 
 import matplotlib.pyplot as plt
 from string import capwords
+import os
+import tempfile
 
 import pyabc
+import tumor2d
 
 import argparse
 
@@ -27,13 +29,16 @@ args = parser.parse_args()
 port = args.port
 host = args.ip
 
-pop_size = 200
-min_eps=750
-min_eps_ori=min_eps
-max_nr_pop=100
-logfilepath = "/p/home/jusers/reck1/juwels/scripts/programs/results/TumorStats.txt"
+pop_size = 1000
+min_eps = 700
+min_eps_ori = min_eps
+max_nr_pop = 100
+logfilepath = "/p/home/jusers/reck1/juwels/scripts/programs/results/TumorStats.csv"
 resultfile = open("/p/home/jusers/reck1/juwels/scripts/programs/results/TumorRuntimes.txt", "a")
 
+db_path = "sqlite:///" + os.path.join("/p/home/jusers/reck1/juwels/scripts/programs/results", "TumorRes.db")
+
+db_path_ori = "sqlite:///" + os.path.join("/p/home/jusers/reck1/juwels/scripts/programs/results", "TumorRes_ori.db")
 
 # In[2]:
 
@@ -111,7 +116,7 @@ abc = pyabc.ABCSMC(models=tumor2d.log_model,
                    population_size=pop_size, 
                    sampler=redis_sampler)
 
-abc.new("sqlite:///results/test_TumorOriginal.db", data_mean)
+abc.new(db_path_ori, data_mean)
 history_f = abc.run(max_nr_populations=max_nr_pop, minimum_epsilon=min_eps_ori)
 endtime=time()
 
@@ -137,11 +142,11 @@ abc = pyabc.ABCSMC(tumor2d.log_model,
                    population_size=pop_size, 
                    sampler=redis_sampler)
 
-abc.new("sqlite:///results/test_TumorPAR_LA.db", data_mean)
+abc.new(db_path, data_mean)
 history = abc.run(max_nr_populations=max_nr_pop, minimum_epsilon=min_eps)
 endtime=time()
 
-resultfile.write("Ori, " + str(endtime-starttime)+", " + str(pop_size) + ", " + str(min_eps))
+resultfile.write("LA, " + str(endtime-starttime)+", " + str(pop_size) + ", " + str(min_eps))
 
 # In[10]:
 

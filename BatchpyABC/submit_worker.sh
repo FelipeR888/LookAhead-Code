@@ -1,5 +1,9 @@
 #!/bin/sh
 
+export MKL_NUM_THREADS=1
+export NUMEXPR_NUM_THREADS=1
+export OMP_NUM_THREADS=1
+
 HOST_IP=${1}
 PORT=${2}
 TIME=${3}
@@ -17,4 +21,4 @@ source ./load_module.sh
 declare -A PW_DICT
 
 # Start redis-worker
-/p/home/jusers/reck1/juwels/keksenv/bin/abc-redis-worker --host=${HOST_IP} --port ${PORT} --runtime ${TIME:0:2}h --processes ${CPUSPERTASK}
+/p/home/jusers/reck1/juwels/keksenv/bin/abc-redis-worker --host=${HOST_IP} --port ${PORT} --runtime ${TIME:0:2}h --processes ${CPUSPERTASK} --daemon=False
