@@ -2,6 +2,7 @@
 
 
 import pyabc
+import matplotlib.rc
 import matplotlib.pyplot as plt
 import os
 import tempfile
@@ -10,6 +11,11 @@ import numpy as np
 import seaborn as sns
 import pandas as pd
 
+font = {'family' : 'normal',
+        'weight' : 'normal',
+        'size'   : 16}
+
+matplotlib.rc('font', **font)
 
 # In[2]:
 
